@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-app id="inspire">
+    <v-app id="inspire" style="width: 100vw;">
     
     <v-app-bar
       app
@@ -30,11 +30,12 @@
     </v-app-bar>
 
     <v-content>
-      <v-container style="display: flex; justify-content: space-around;">
+      <v-container class="fill-height" fluid>
         <router-view :ru="textru" :ua="textua" :us="textus" :no="textno"></router-view>
       </v-container>
     </v-content>
     <v-footer
+
       color="indigo"
       app
     >
